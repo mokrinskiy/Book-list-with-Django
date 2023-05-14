@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+  <div class="card">
+    <h5 class="card-header">{{ book.status }}</h5>
+    <div class="card-body">
+      <h5 class="card-title">{{ book.title }}</h5>
+      <p class="card-text">Author: {{ book.author}}</p>
+      <p class="card-text">Genre: {{ book.genre }}</p>
+      <p class="card-text">Status: {{ book.status }}</p>
+      {% if book.is_favorite == True %}
+
+        <p class="card-text"><span class="badge text-bg-success">Favorite</span></p>
+
+      {% endif %}
+      <p class="card-text">Comment: {{ book.comment }}</p>
+      <p class="card-text">Date the book was added: {{ book.date_added }}</p>
+      <p class="card-text">Date the book was updated: {{ book.date_updated }}</p>
+      <a class="btn btn-secondary" href="{% url 'book_list' %}" role="button">Back to list</a>
+      <a class="btn btn-success" href="{% url 'book_update' book.slug %}" role="button">Edit</a>
+      <a class="btn btn-danger" href="{% url 'book_delete' book.slug %}" role="button">Delete</a>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

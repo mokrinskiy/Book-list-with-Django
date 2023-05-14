@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="col-md-6 offset-md-3">
+  <div class="card text">
+    <div class="card-header">
+      Profile
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ user.username }}</h5>
+
+      {% for status, count in book_counts.items %}
+
+          <p class="card-text">{{ status }}: {{ count }}</p>
+
+      {% endfor %}
+
+      <p class="card-text">Total books added: {{ total_books_added }}</p>
+    </div>
+    <div class="card-footer text-muted">
+      Registration date: {{ user.date_joined|date:"m.d.Y" }}
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

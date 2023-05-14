@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if books_count == 0 %}
+
+<div class="d-grid gap-2">
+  <a class="btn btn-primary" href="{% url 'book_create' %}" type="button">Add book</a>
+</div>
+<h2>Oops, your book list is empty, add the first book</h2>
+
+{% else %}
+
+  <div class="d-grid gap-2">
+    <a class="btn btn-primary" href="{% url 'book_create' %}" type="button">Add book</a>
+  </div>
+    
+  {% for i, j in book_list.items %}
+
+  {% if j %}
+
+  <h2>{{ i }}:</h2>
+
+  <table class="table table-hover table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      {% for k in j %}
+
+      <tr>
+        <th scope="row">{{ forloop.counter }}</th>
+        <td><a href="{% url 'book_detail' k.slug %}">{{ k.title }}</a></td>
+        <td>{{ k.author }}</td>
+        <td>{{ k.genre }}</td>
+        <td>{{ k.status }}</td>
+      </tr>
+
+      {% endfor %} 
+
+    </tbody>
+  </table>
+
+  {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% endblock content %}

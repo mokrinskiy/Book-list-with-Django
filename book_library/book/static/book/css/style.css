@@ -1,0 +1,205 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ysabeau&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+a, p, h1, h2, h3 {
+    color: #fff
+}
+
+body {
+    background-color: #222220;
+}
+
+.header {
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    background-color: #000000;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+	height: 80px;
+	top: 0;
+}
+
+.header ul {
+    height: 80px;
+	word-wrap: normal;
+	list-style: none;
+	padding: 0px 50px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header li a {
+	display: flex;
+    align-items: center;
+    color: white;
+	padding: 1em;
+    flex-wrap: wrap;
+	top: 50px;
+}
+
+.container {
+    padding: 2em 15em 0em 15em;
+}
+
+.main {
+	margin: 50px auto 0px auto;
+	max-width: 1200px;
+	padding: 40px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td, tbody {
+	text-align: left;
+	color: #fff;
+}
+
+td {
+	flex-wrap: wrap;
+}
+
+th {
+	border-bottom: 1px solid #ddd;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+  width: 5%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 40%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 25%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+  width: 15%;
+}
+
+th:nth-child(5),
+td:nth-child(5) {
+  width: 15%;
+}
+
+td {
+	font-size: 14px;
+}
+
+h2#table {
+	padding: 5px;
+	padding-left: 0px;
+}
+
+hr {
+	margin-bottom: 40px;
+	color: #222220;
+	border: 0;
+}
+
+.form {
+	margin-top: 15px;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+}
+
+input[type="text"], input[type="password"], textarea {
+	padding: 10px;
+	margin: 10px 10px;
+	border: none;
+	border: 1px solid black;
+	border-radius: 10px;
+	outline: none;
+	font-size: 16px;
+	width: 90%;
+}
+
+.helptext {
+	padding: 10px;
+}
+
+button[type="submit"] {
+	background-color: black;
+	color: white;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	padding: 10px 20px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+  
+button[type="submit"]:hover {
+	background: #fff;
+	color: #222220;
+	transition: 0.2s;
+}
+
+label {
+	padding: 15px;
+}
+
+.form h1{
+	padding: 15px;
+}
+
+.main p {
+	padding: 10px;
+}
+
+.nav_a {
+	background: #222222;
+	border: 1px solid #000000;
+	border-radius: 50px;
+}
+
+.nav_a:hover {
+	background: #fff;
+	color: #222220;
+	transition: 0.2s;
+}
+
+footer {
+    background-color: #000000;
+	display: flex;
+	position: fixed;
+    width: 100%;
+	height: 80px;
+	bottom: 0;
+}
+
+.table_title:hover {
+	background: #fff;
+	color: #222220;
+	transition: 0.2s;
+}
+
+td a {
+	display:block;
+	padding: 10px;
+	background: #222222;
+	border-radius: 50px;
+	margin-right: 10px;
+} */
